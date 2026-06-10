@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Campaign {
+  _id: ID!
+  name: String!
+  tenantId: String!
+  client: String!
+  status: String!
+  budget: Float!
+  startDate: DateTime!
+  endDate: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  campaigns: [Campaign!]!
+  campaign(id: ID!): Campaign!
+}
+
+type Mutation {
+  createCampaign(createCampaignInput: CreateCampaignDto!): Campaign!
+}
+
+input CreateCampaignDto {
+  name: String!
+  client: String!
+  budget: Float!
+  startDate: DateTime!
+  endDate: DateTime!
+}

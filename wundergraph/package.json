@@ -1,0 +1,12 @@
+{
+  "name": "marketing-platform-wundergraph",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "wundergraph start",
+    "build": "wundergraph build"
+  },
+  "dependencies": {
+    "@wundergraph/sdk": "^0.184.2"
+  }
+}

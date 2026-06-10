@@ -1,0 +1,51 @@
+# Analytics Service - .gitignore
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.js
+*.js.map
+!**/dist/**/*.js
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Analytics Service specific
+analytics-data/
+reports/
+exports/
+metrics-cache/
+kpi-backups/
+recommendations-cache/

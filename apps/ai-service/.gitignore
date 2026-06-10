@@ -1,0 +1,67 @@
+# AI Service - .gitignore
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.js
+*.js.map
+!**/dist/**/*.js
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# AI/ML specific
+*.model
+*.pkl
+*.h5
+*.pb
+*.onnx
+*.joblib
+datasets/
+models/
+checkpoints/
+tensorboard/
+*.ckpt
+*.pth
+*.prof
+*.pprof
+
+# AI Service specific
+training-data/
+model-weights/
+embeddings/
+recommendation-cache/
+ai-logs/
+ml-experiments/

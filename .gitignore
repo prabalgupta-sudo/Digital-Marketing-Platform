@@ -1,0 +1,361 @@
+# =============================================================================
+# Digital Marketing Planning Platform - Comprehensive .gitignore
+# =============================================================================
+
+# =============================================================================
+# Node.js & TypeScript
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts.map
+
+# =============================================================================
+# NestJS Specific
+# =============================================================================
+dist/
+build/
+*.js.map
+*.js
+!**/dist/**/*.js
+!**/build/**/*.js
+
+# NestJS CLI
+.nest/
+.husky/
+
+# =============================================================================
+# Environment & Configuration Files
+# =============================================================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+*.env
+.envrc
+# Keep .env.example as it's meant to be committed
+!.env.example
+
+# =============================================================================
+# MongoDB & Database
+# =============================================================================
+data/
+db/
+*.db
+*.sqlite
+*.sqlite3
+dump/
+mongod.log
+mongo-data/
+
+# =============================================================================
+# Docker & Containers
+# =============================================================================
+.docker/
+.dockerignore
+docker-compose.override.yml
+
+# =============================================================================
+# WunderGraph
+# =============================================================================
+.wundergraph/
+.wundergraph-compiled/
+.generated/
+.wg/
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+junit.xml
+
+# =============================================================================
+# Logs
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# =============================================================================
+# IDE & Editors
+# =============================================================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# WebStorm/IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.tags*
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# =============================================================================
+# OS Generated Files
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Build Artifacts & Dependencies
+# =============================================================================
+lib/
+target/
+bin/
+obj/
+out/
+*.o
+*.so
+*.dylib
+*.dll
+
+# =============================================================================
+# Package Manager Files
+# =============================================================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# =============================================================================
+# Security & Secrets
+# =============================================================================
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+secrets/
+credentials/
+*.secret
+*.credentials
+id_rsa*
+id_ed25519*
+
+# =============================================================================
+# Cache & Temporary Files
+# =============================================================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.tmp/
+temp/
+tmp/
+
+# =============================================================================
+# Misc
+# =============================================================================
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rpt2_cache_minus/
+.vscode-test/
+.yarn-integrity
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =============================================================================
+# Frontend Specific (React)
+# =============================================================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# =============================================================================
+# Microservices Specific
+# =============================================================================
+apps/user-service/node_modules/
+apps/user-service/dist/
+apps/user-service/.env
+apps/user-service/*.log
+
+apps/campaign-service/node_modules/
+apps/campaign-service/dist/
+apps/campaign-service/.env
+apps/campaign-service/*.log
+
+apps/analytics-service/node_modules/
+apps/analytics-service/dist/
+apps/analytics-service/.env
+apps/analytics-service/*.log
+
+apps/ai-service/node_modules/
+apps/ai-service/dist/
+apps/ai-service/.env
+apps/ai-service/*.log
+
+# =============================================================================
+# Infrastructure & DevOps
+# =============================================================================
+infrastructure/mongodb/data/
+infrastructure/redis/data/
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+tfplan
+
+# =============================================================================
+# Monitoring & Analytics
+# =============================================================================
+*.prof
+*.pprof
+*.heap
+monitoring/grafana/data/
+monitoring/prometheus/data/
+
+# =============================================================================
+# Documentation & Reports
+# =============================================================================
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+reports/
+docs/_build/
+
+# =============================================================================
+# Backup Files
+# =============================================================================
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# =============================================================================
+# CI/CD
+# =============================================================================
+.github/workflows/*.local
+.gitlab-ci-local.yml
+azure-pipelines-local.yml
+
+# =============================================================================
+# Performance & Profiling
+# =============================================================================
+*.prof
+*.pprof
+*.heap
+cpuprofile
+heapsnapshot
+
+# =============================================================================
+# AI/ML Specific
+# =============================================================================
+*.model
+*.pkl
+*.h5
+*.pb
+*.onnx
+*.joblib
+datasets/
+models/
+checkpoints/
+tensorboard/
+*.ckpt
+*.pth
+
+# =============================================================================
+# GraphQL Specific
+# =============================================================================
+schema.graphql
+generated-types.ts
+.graphqlconfig
+
+# =============================================================================
+# Custom Project Specific
+# =============================================================================
+# Add any project-specific ignores here
+# local-config/
+# staging-data/
+# production-backups/

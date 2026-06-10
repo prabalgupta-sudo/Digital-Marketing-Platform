@@ -1,0 +1,44 @@
+# WunderGraph Gateway - .gitignore
+
+# Dependencies
+node_modules/
+
+# WunderGraph generated files
+.wundergraph/
+.wundergraph-compiled/
+.generated/
+.wg/
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# WunderGraph specific
+.graphqlconfig
+generated-types.ts
+schema.graphql
