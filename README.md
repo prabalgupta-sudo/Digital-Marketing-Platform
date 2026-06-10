@@ -293,6 +293,6 @@ For support and questions:
 
 ---
 
-**Built with ❤️ by Marketing Platform Engineering Team**
+**Built with ❤️ by Prabal Gupta**
 
 *This project demonstrates enterprise-grade full-stack development with modern architecture patterns, best practices, and production-ready code quality.*
